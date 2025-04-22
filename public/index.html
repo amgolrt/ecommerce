@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="contact-banner">
+      <p class="phone-number">Need help? Call us: (+98) 0234 456 789</p>
+      <div class="contact-banner-options">
+        <div class="store">
+          <img
+            class="header-imgs"
+            src="img/location.png"
+            alt="Location symbol"
+          />
+          <a href="" class="address">Our store</a>
+        </div>
+        <div class="track-order">
+          <img class="header-imgs" src="img/group.png" alt="Truck symbol" />
+          <a href="" class="track">Track your order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-banner">
+      <div class="logo-search-bar">
+        <img class="logo" src="img/logo1.png" alt="Logo" />
+        <div class="search-bar">
+          <input type="text" placeholder="Search anything" />
+          <button>Search</button>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <div class="user-info-signin">
+          <img class="header-imgs" src="img/user.png" alt="User symbol" />
+          <a href="" class="signin-link">Sign in</a>
+        </div>
+        <div class="user-favorites">
+          <img class="header-imgs" src="img/heart.png" alt="Favorites symbol" />
+          <a href="" class="signin-link">Sign in</a>
+        </div>
+        <div class="user-cart">
+          <img
+            class="cart-img"
+            src="img/shopping-cart.png"
+            alt="Shopping cart symbol"
+          />
+          <a href="" class="signin-link">Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-menu">
+      <div class="browse-all dropdown">
+        <button class="dropbtn-browse">
+          Browse categories
+          <img
+            class="arrow-down"
+            src="img/arrow-down.png"
+            alt="Arrow down sybol"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="/products.html?category=tablet">Tablet</a>
+          <a href="#">Página 2</a>
+          <a href="#">Página 3</a>
+        </div>
+      </div>
+      <div class="nav-menu-options">
+        <div class="nav-menu-browse">
+          <div class="browse-home">
+            <div class="home dropdown">
+              <button class="dropbtn-alt">
+                <a href="index.html"> Home </a>
+                <img
+                  class="arrow-down"
+                  src="img/arrow-down2.png"
+                  alt="Arrow down sybol"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Página 1</a>
+                <a href="#">Página 2</a>
+                <a href="#">Página 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog dropdown">
+            <button class="dropbtn-alt">
+              <a href="products.html"> Catalog </a>
+              <img
+                class="arrow-down"
+                src="img/arrow-down2.png"
+                alt="Arrow down sybol"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Página 1</a>
+              <a href="#">Página 2</a>
+              <a href="#">Página 3</a>
+            </div>
+          </div>
+          <div class="blog">
+            <button class="btn">Blog</button>
+          </div>
+          <div class="pages dropdown">
+            <button class="dropbtn-alt">
+              Pages
+              <img
+                class="arrow-down"
+                src="img/arrow-down2.png"
+                alt="Arrow down sybol"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Página 1</a>
+              <a href="#">Página 2</a>
+              <a href="#">Página 3</a>
+            </div>
+          </div>
+          <div class="about">
+            <button class="btn">About us</button>
+          </div>
+        </div>
+        <a href="#" class="return">30 Days Free Return</a>
+      </div>
+    </div>
+
+    <div class="product-carousel">
+      <div class="product-track">
+        <div class="product-card">
+          <div class="product-info">
+            <h2 class="product-title">Product 1</h2>
+            <div class="product-buttons">
+              <button class="buy-btn">Shop now</button>
+              <button class="details-btn">View more</button>
+            </div>
+            <div class="product-dots">
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="product-image">
+            <img src="img/camera.png" alt="Product 1" />
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-info">
+            <h2 class="product-title">Product 2</h2>
+            <div class="product-buttons">
+              <button class="buy-btn">Shop now</button>
+              <button class="details-btn">View more</button>
+            </div>
+            <div class="product-dots">
+              <span class="dot"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+            </div>
+          </div>
+          <div class="product-image">
+            <img src="img/laptop.png" alt="Product 2" />
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="product-info">
+            <h2 class="product-title">Product 3</h2>
+            <div class="product-buttons">
+              <button class="buy-btn">Shop now</button>
+              <button class="details-btn">View more</button>
+            </div>
+            <div class="product-dots">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot active"></span>
+            </div>
+          </div>
+          <div class="product-image">
+            <img src="img/speaker.png" alt="Product 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="category-carousel">
+      <button id="prevBtn" class="arrow left">&#10094;</button>
+      <div class="track-wrapper">
+        <div id="category-track" class="category-track"></div>
+      </div>
+      <button id="nextBtn" class="arrow right">&#10095;</button>
+    </div>
+
+    <div class="section-popular">
+      <div class="popular-row">
+        <p class="title-index">Popular products</p>
+        <div id="categoryButtons" class="categoryButtons">
+          <button data-category="Camera">Cameras</button>
+          <button data-category="Desktop & laptop">Desktop & laptop</button>
+          <button data-category="Tablet">Tablets</button>
+          <button data-category="Console">Console</button>
+        </div>
+      </div>
+      <!-- aqui os produtos vão aparecer -->
+      <div id="product-list" class="product-grid">
+        <!-- JS vai preencher com os cards dos produtos -->
+      </div>
+    </div>
+
+    <div class="index-banner">
+      <img
+        class="banner-img"
+        src="img/pexels-nao-triponez-1292081.png"
+        alt="Imagem 1"
+      />
+      <img class="banner-img" src="img/Frame58.png" alt="Imagem 2" />
+    </div>
+
+    <div class="carousel-interview">
+      <div class="track-wrapper">
+        <div class="interview-track">
+          <div class="interview-card">
+            <div class="credentials">
+              <img
+                class="profile-img"
+                src="img/profile1.png"
+              />
+              <p class="name">Savannah Nguyen</p>
+            </div>
+            <div class="interview-text">
+              <p class="interview-content">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+            </div>
+          </div>
+          <div class="interview-card"> <div class="credentials">
+            <img
+              class="profile-img"
+              src="img/profile2.png"
+            />
+            <p class="name">Esther Howard </p>
+          </div>
+          <div class="interview-text">
+            <p class="interview-content">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+          </div>
+        </div></div>
+          <div class="interview-card"> <div class="credentials">
+            <img
+              class="profile-img"
+              src="img/profile3.png"
+            />
+            <p class="name">Esther Howard</p>
+          </div>
+          <div class="interview-text">
+            <p class="interview-content">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+          </div>
+        </div></div>
+          <div class="interview-card"> <div class="credentials">
+            <img
+              class="profile-img"
+              src="img/laptop.png"
+            />
+            <p class="name">Laptop</p>
+          </div>
+          <div class="interview-text">
+            <p class="interview-content">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+          </div>
+        </div></div>
+        </div>
+      </div>
+
+      <div class="interview-dots" id="interviewDots">
+      </div>
+    </div>
+
+    <div class="qualifications">
+      <img
+        class="qualifications-img"
+        src="img/Frame68.png"
+        alt="Qualifications"
+      />
+    </div>
+    <div class="latest-news">
+      <div class="latest-news-title">
+        <p>Latest News</p>
+        <a href="" class="view-more-news"> View all</a>
+      </div>
+
+      <div class="carousel-news">
+        <div class="track-wrapper">
+          <div class="news-track" id="newsTrack">
+            <div class="news-card">
+              <img
+                class="news-img"
+                src="img/Blog-1_540x490_crop_center1.png"
+              />
+              <div class="news-info">
+                <p class="news-date">22,oct,2021</p>
+                <p class="news-title">Who avoids a pain that produces?</p>
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                <p class="news-by">By spacing tech</p>
+              </div>
+            </div>
+            <div class="news-card">
+              <img
+                class="news-img"
+                src="img/Blog-2_540x490_crop_center1.png"
+              />
+              <div class="news-info">
+                <p class="news-date">22,oct,2021</p>
+                <p class="news-title">Who avoids a pain that produces?</p>
+                <p class="news-text">Lorem ipsum dolor sit amet consectetur. Nec sit enim tellus faucibus bibendum ullamcorper. Phasellus tristique aenean at lorem sed scelerisque.</p>
+                <p class="news-by">By spacing tech</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="news-dots" id="newsDots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+        </div>
+    </div>
+
+    <div class="site-footer">
+      <div class="footer-container">
+        <div class="footer-newsletter">
+          <p class="newsletter-title">Subscribe newsletter</p>
+          <form class="newsletter-form">
+            <label for="email"></label>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Email address" required />
+              <button type="submit"><img
+                class="submit-img"
+                src="img/send-2.png"
+              /></button>
+            </div>
+          </form>
+          <div class="contact-footer">
+            <img
+                class="submit-img"
+                src="img/headphone.png"
+              />
+              Call us 24/7 : (+62) 0123 567 789
+          </div>
+        </div>
+        <div class="columns">
+          <div class="footer-column">
+            <img
+                  class="logo2-img"
+                  src="img/logo2.png"
+                />
+            <p>64 st james boulevard hoswick , ze2 7zj</p>
+            <div class="footer-line"></div>
+            <div class="socials">
+              <img
+                  class="socials-img"
+                  src="img/google.png"
+                />
+                <img
+                  class="socials-img"
+                  src="img/google.png"
+                />
+                <img
+                  class="socials-img"
+                  src="img/google.png"
+                />
+            </div>
+          </div>
+  
+          <div class="footer-column">
+            <h3>Find product</h3>
+            <ul>
+              <li><a href="#">Brownze arnold</a></li>
+              <li><a href="#">Chronograph blue</a></li>
+              <li><a href="#">Smart phones</a></li>
+              <li><a href="#">Automatic watch</a></li>
+              <li><a href="#">Hair straighteners</a></li>
+            </ul>
+          </div>
+      
+          <div class="footer-column">
+            <h3>Get help</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Return policy</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Payment policy</a></li>
+            </ul>
+          </div>
+  
+          <div class="footer-column">
+            <h3>About us</h3>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Our policy</a></li>
+              <li><a href="#">Customer care</a></li>
+              <li><a href="#">Faq’s</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

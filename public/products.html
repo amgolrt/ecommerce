@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/products.js"></script>
+  </head>
+  <body>
+    <div class="contact-banner">
+      <p class="phone-number">Need help? Call us: (+98) 0234 456 789</p>
+      <div class="contact-banner-options">
+        <div class="store">
+          <img
+            class="header-imgs"
+            src="img/location.png"
+            alt="Location symbol"
+          />
+          <a href="" class="address">Our store</a>
+        </div>
+        <div class="track-order">
+          <img class="header-imgs" src="img/group.png" alt="Truck symbol" />
+          <a href="" class="track">Track your order</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="top-banner">
+      <div class="logo-search-bar">
+        <img class="logo" src="img/logo1.png" alt="Logo" />
+        <div class="search-bar">
+          <input type="text" placeholder="Search anything" />
+          <button>Search</button>
+        </div>
+      </div>
+
+      <div class="user-info">
+        <div class="user-info-signin">
+          <img class="header-imgs" src="img/user.png" alt="User symbol" />
+          <a href="" class="signin-link">Sign in</a>
+        </div>
+        <div class="user-favorites">
+          <img class="header-imgs" src="img/heart.png" alt="Favorites symbol" />
+          <a href="" class="signin-link">Sign in</a>
+        </div>
+        <div class="user-cart">
+          <img
+            class="cart-img"
+            src="img/shopping-cart.png"
+            alt="Shopping cart symbol"
+          />
+          <a href="" class="signin-link">Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav-menu">
+      <div class="browse-all dropdown">
+        <button class="dropbtn-browse">
+          Browse categories
+          <img
+            class="arrow-down"
+            src="img/arrow-down.png"
+            alt="Arrow down sybol"
+          />
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Página 1</a>
+          <a href="#">Página 2</a>
+          <a href="#">Página 3</a>
+        </div>
+      </div>
+      <div class="nav-menu-options">
+        <div class="nav-menu-browse">
+          <div class="browse-home">
+            <div class="home dropdown">
+              <button class="dropbtn-alt">
+                <a href="index.html"> Home </a>
+                <img
+                  class="arrow-down"
+                  src="img/arrow-down2.png"
+                  alt="Arrow down sybol"
+                />
+              </button>
+              <div class="dropdown-content">
+                <a href="#">Página 1</a>
+                <a href="#">Página 2</a>
+                <a href="#">Página 3</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="catalog dropdown">
+            <button class="dropbtn-alt">
+              Catalog
+              <img
+                class="arrow-down"
+                src="img/arrow-down2.png"
+                alt="Arrow down sybol"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Página 1</a>
+              <a href="#">Página 2</a>
+              <a href="#">Página 3</a>
+            </div>
+          </div>
+          <div class="blog">
+            <button class="btn">Blog</button>
+          </div>
+          <div class="pages dropdown">
+            <button class="dropbtn-alt">
+              Pages
+              <img
+                class="arrow-down"
+                src="img/arrow-down2.png"
+                alt="Arrow down sybol"
+              />
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Página 1</a>
+              <a href="#">Página 2</a>
+              <a href="#">Página 3</a>
+            </div>
+          </div>
+          <div class="about">
+            <button class="btn">About us</button>
+          </div>
+        </div>
+        <a href="#" class="return">30 Days Free Return</a>
+      </div>
+    </div>
+
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span class="current">All categories</span>
+    </nav>
+
+    <div class="products-main">
+      <div class="top-left-panel">
+        <div class="reset-div">
+          <p class="categories-title">Categories</p>
+          <p class="reset">Reset</p>
+        </div>
+        <div id="categoryFilter">
+          <label class="checkbox-container"
+            ><input type="checkbox" value="all" />
+            <span class="checkmark"></span> All categories</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="tablet" />
+            <span class="checkmark"></span>Tablet</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="desktop & laptop" />
+            <span class="checkmark"></span>Desktop & laptop</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="headphones" />
+            <span class="checkmark"></span>Headphones</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="console" />
+            <span class="checkmark"></span>Console</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="other" />
+            <span class="checkmark"></span>Other</label
+          >
+        </div>
+
+        <hr />
+        <div class="reset-div">
+          <p class="categories-title">Availibity</p>
+          <p class="reset">Reset</p>
+        </div>
+        <div id="avaliabilityFilter">
+          <label class="checkbox-container"
+            ><input type="checkbox" value="instock" />
+            <span class="checkmark"></span> In stock</label
+          >
+          <label class="checkbox-container"
+            ><input type="checkbox" value="outofstock" />
+            <span class="checkmark"></span>Out of stock</label
+          >
+        </div>
+
+        <hr />
+      </div>
+
+      <div id="product-list" class="product-list"></div>
+    </div>
+
+    <div class="site-footer">
+      <div class="footer-container">
+        <div class="footer-newsletter">
+          <p class="newsletter-title">Subscribe newsletter</p>
+          <form class="newsletter-form">
+            <label for="email"></label>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+              <button type="submit">
+                <img class="submit-img" src="img/send-2.png" />
+              </button>
+            </div>
+          </form>
+          <div class="contact-footer">
+            <img class="submit-img" src="img/headphone.png" />
+            Call us 24/7 : (+62) 0123 567 789
+          </div>
+        </div>
+        <div class="columns">
+          <div class="footer-column">
+            <img class="logo2-img" src="img/logo2.png" />
+            <p>64 st james boulevard hoswick , ze2 7zj</p>
+            <div class="footer-line"></div>
+            <div class="socials">
+              <img class="socials-img" src="img/google.png" />
+              <img class="socials-img" src="img/google.png" />
+              <img class="socials-img" src="img/google.png" />
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3>Find product</h3>
+            <ul>
+              <li><a href="#">Brownze arnold</a></li>
+              <li><a href="#">Chronograph blue</a></li>
+              <li><a href="#">Smart phones</a></li>
+              <li><a href="#">Automatic watch</a></li>
+              <li><a href="#">Hair straighteners</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>Get help</h3>
+            <ul>
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Return policy</a></li>
+              <li><a href="#">Privacy policy</a></li>
+              <li><a href="#">Payment policy</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3>About us</h3>
+            <ul>
+              <li><a href="#">News</a></li>
+              <li><a href="#">Service</a></li>
+              <li><a href="#">Our policy</a></li>
+              <li><a href="#">Customer care</a></li>
+              <li><a href="#">Faq’s</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
